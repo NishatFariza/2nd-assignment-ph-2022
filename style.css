@@ -1,0 +1,124 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+/* common styles or utilites */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+    font-size: 500;
+
+}
+img{
+   max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+   
+}
+
+/* navbar styles start */
+
+.nav-container{
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    font-size: 24px;
+    line-height: 36px;
+}
+.nav-menu-wrap ul{
+    display: flex;
+}
+.nav-menu-wrap ul li{
+    list-style: none;
+}
+.nav-menu-wrap ul li a{
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+    margin-right: 36px;
+    transition: 0.5s;
+}
+.nav-menu-wrap ul li a:hover{
+    color: #E02C6D;
+}
+/* navbar styles end  */
+
+/* header styles start */
+.header-section{
+    margin-top: 100px;
+}
+.header-wrapper{
+    display: flex;
+}
+.header-left-wrap{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.header-title{
+    font-size: 52px;
+    line-height: 70px;
+    max-width: 582px;
+}
+.header-discription{
+    width: 505px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0;
+    font-weight: 600;
+}
+.primary-button{
+    outline: none;
+    border: 0;
+    width: 196px;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #E02C6D;
+    border-radius: 41px;
+
+}
+.primary-button i{
+    margin-left: 8px;
+    font-size: 12px;
+
+}
+.header-right-wrap{
+    width: 40%;
+    display: flex;
+    height:500px ;
+    justify-content: start;
+    align-items: flex-start;
+    
+}
+.header-right-wrap img{
+    width: 440px;
+    height: 414px;
+}
+
+
+
+
+/* header styles end */
