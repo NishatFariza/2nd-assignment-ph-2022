@@ -68,7 +68,7 @@ li{
 
 /* header styles start */
 .header-section{
-    margin-top: 120px;
+    margin-top: 100px;
    
 }
 .header-wrapper{
@@ -92,7 +92,9 @@ li{
     line-height: 24px;
     margin: 16px 0;
     font-weight: 600;
+    text-align: justify;
 }
+
 .primary-button{
     outline: none;
     border: 0;
@@ -159,7 +161,7 @@ li{
 .collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 0px;
+    grid-column-gap: 30px;
     grid-row-gap:30px;
     padding: 0 50px;
 }
@@ -208,10 +210,10 @@ li{
     text-align: justify;
     margin-bottom: 20px;
 }
-.collection-link-wrap{
+.collection-link-wrap {
     margin-top: 50px;
-    padding-right: 90px;
-    text-align:end;
+    padding-right: 40px;
+    text-align: end;
 }
 
 .collection-link-wrap a{
