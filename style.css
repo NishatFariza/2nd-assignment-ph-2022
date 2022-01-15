@@ -115,22 +115,37 @@ li{
     height:500px ;
     justify-content: start;
     align-items: flex-start;
-    background-image: url(images/Circle.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
+    
     
 }
 .header-right-wrap img{
     width: 440px;
     height: 414px;
+    border-radius: 100%;
+    position: relative;
+   
 }
+/* header animaion style start  */
+@keyframes mymove {
+    50%{
+        transform: rotate(-180deg);
+    }
+    
+}
+.header-right-wrap img{
+    animation: mymove 5s infinite;
+    animation-play-state: running;
+    
+}
+
+/* header animaion style end  */
+
 
 /* header styles end */
 
 /* collection styles start  */
 .collection-section{
-    padding: 100px 0px;
+    margin:0 auto;
    
 }
 
@@ -193,18 +208,29 @@ li{
     text-align: justify;
     margin-bottom: 20px;
 }
+.collection-link-wrap{
+    margin-top: 50px;
+    padding-right: 90px;
+    text-align:end;
+}
 
+.collection-link-wrap a{
+    color: #E02C6D;
+    
+}
 
 
 /* collection styles end  */
 
 /* follow styles start  */
 .follow-section{
-    margin: 60px auto;
+    margin-top: 0;
+    
 }
 .followers{
     display: flex;
     margin-top: 50px;
+
 
 
 }
@@ -232,7 +258,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .5s;
+    transition:transition .5s ease ;
    
 
 }
@@ -248,7 +274,7 @@ li{
 } 
 .followers:hover .follow-overlay{
     transform:scale(1.1);
-    transition:transition .5s ease ;
+ 
 }
 /* follow styles end */
 
@@ -303,10 +329,135 @@ li{
 
  /* responsive style start */
 
- @media only screen and (max-width:720px) {
+ @media only screen and (max-width:900px) {
+    .header-section {
+        margin-top: 0;
+    }
      .container{
          width: 100%;
      }
+     .header-title {
+        font-size: 38px;
+        line-height: 52px;
+       
+    }
+    .header-discription {
+        width: 425px;
+    }
+    .header-right-wrap {
+       
+        height: 395px;
+        
+    }
+    .collections {
+
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .followers {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+    .follow {
+        height: 200px;
+    }
+    .follow-overlay {
+        width: 300px;
+        height: 200px;
+        
+    }
+     
+ }
+ @media only screen and (max-width:750px){
+    .nav-menu-wrap ul li a {
+      
+        font-size: 14px;
+    
+        line-height: 20px;
+      
+        margin-right: 20px;
+       
+    }
+    .header-discription {
+        width: 375px;
+    }
+    .header-right-wrap img {
+        width: 290px;
+        height: 346px;
+    }
+    .collections {
+        grid-column-gap: 25px;
+        padding: 0;
+    }
+     
+ }
+ @media only screen and (max-width:500px) {
+    .nav-logo {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .nav-menu-wrap ul li a {
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 12px;
+    }
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-left-wrap {
+        width: 100%;
+        
+    }
+    .header-title {
+        font-size: 35px;
+        line-height: 48px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .header-discription {
+        text-align: center;
+        max-width: 410px;
+        margin: 15px auto;
+    }
+    .primary-button-wrap {
+        text-align: center;
+    }
+    .header-right-wrap {
+        height: 305px;
+    }
+    .collections {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    .collection-link-wrap {
+        padding-right: 60px;
+        margin-bottom: 30px;
+    }
+    .footer-title {
+        font-size: 22px;
+        line-height: 34px;
+    }
+    .footer-wrap p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer-section {
+        padding: 35px 0;
+        text-align: center;
+    }
+    .footer-icon-wrap ul {
+        justify-content: center;
+    }
+    .footer-icon {
+        margin: 0 5px;
+    }
+    
      
  }
 
